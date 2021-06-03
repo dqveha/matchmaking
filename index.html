@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Celebrity Dating Webpage</title>
+</head>
+<body>
+  <div>
+    <form id="formOne">
+      <div class="container">
+        <h2>Gender</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="male" checked>
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="Female">
+            Female
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="Non-Binary">
+            Non-Binary
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Age</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="age" value="ageGroup1" checked>
+            Age 21-35
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="age" value="ageGroup2">
+            Age 36-49
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="age" value="ageGroup3">
+            Age 49 and over
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Rich or Attractive</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="rich-or-attractive" value="rich" checked>
+            Rich
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="rich-or-attractive" value="attractive">
+            Attractive
+          </label>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Alive or Dead</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="alive-dead" value="Alive" checked>
+            Alive
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="alive-dead" value="dead">
+            Dead
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn">View your match!</button>
+    </form>
+  </div>
+  <div id="match">
+    <h1>Here is your match!</h1>
+    <p>
+      <span class="person1"></span>
+    </p>
+</body>
+</html>
+
+
+<!-- 1) Male / Female / Non-Binary
+  Male: Ghengis Khan, Ryan Gosling, 
+  Non-binary: Selena Gomez, Elliot Page
+  Female: Jennifer Aniston, 
+2) Age group
+3) Rich or Attractive
+4) Alive or Dead
+
+else -- "Keep dreaming"
+
+Male > 49 and over > Rich > Dead = Khan
+Male > Age 36-49 > Attractive/Rich > Alive = Ryan Gosling
+Female > 49 and over > Attractive/Rich > Alive = Jennifer Aniston
+Non-binary > Age 21-35 > Attractive/Rich > Alive = Selena Gomez or Elliot Page -->
